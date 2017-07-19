@@ -34,12 +34,18 @@ app.post('/webhook', (req, res) => {
     const messagingEvents = req.body.entry[0].messaging;
 
     messagingEvents.forEach((event) => {
+        console.log('~~~~~\n~~~~~');
+        console.log(event);
         const sender = event.sender.id;
 
         if (event.postback) {
             const text = JSON.stringify(event.postback).substring(0, 200);
             sendTextMessage(sender, 'Postback received: ' + text);
-        } else if (event.message && event.message.text) { // bracket 101 open
+            var one = 'one';
+        } else if (event.message && event.message.is_echo){
+            var one = 'one'
+        }
+        else if (event.message && event.message.text) { // bracket 101 open
             const text = event.message.text.trim().substring(0, 200);
 
             /////////////////////////////////////////////////////////////////////////////////////////
@@ -54,14 +60,12 @@ app.post('/webhook', (req, res) => {
                         mode: 'text',
                         args: [text, sender]
                       };
-                      // running Python File
                       PythonShell.run("./parent.py" , options,function (err, results) {
                         if (err) throw err;
                         console.log('back in app.js')
                         console.log(results)
-                        // Opening gres.json for the output
-                        var arrobj = require('./gres.json');
-                        // Sending the entire JSON object 
+                        //var arrobj = require('./gres.json');
+                        var arrobj = JSON.parse(require('fs').readFileSync('gres.json', 'utf8'));
                         sendMessage(sender, arrobj);
                       });
                }//bracket 102 close
