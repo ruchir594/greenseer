@@ -54,12 +54,15 @@ app.post('/webhook', (req, res) => {
                         mode: 'text',
                         args: [text, sender]
                       };
+                      // running Python File
                       PythonShell.run("./parent.py" , options,function (err, results) {
                         if (err) throw err;
                         console.log('back in app.js')
                         console.log(results)
-                        var results = String(results)
-                        sendTextMessage(sender, results);
+                        // Opening gres.json for the output
+                        var arrobj = require('./gres.json');
+                        // Sending the entire JSON object 
+                        sendMessage(sender, arrobj);
                       });
                }//bracket 102 close
         } //bracket 101 close
