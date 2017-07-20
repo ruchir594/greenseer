@@ -49,12 +49,11 @@ app.post('/webhook', (req, res) => {
             const text = event.message.text.trim().substring(0, 200);
 
             /////////////////////////////////////////////////////////////////////////////////////////
-
                     console.log("Receive a message2: " + text);
 
-                    if(text == 'hi' || text == 'hey' || text == 'hello'){
+                    if(text.toLowerCase() == 'hi' || text.toLowerCase() == 'hey' || text.toLowerCase() == 'hello'){
                         //sendTextMessage(sender,"Hello, You can ask queries like \n1.What is sigil and words of House Arryn? \n2. What did arya do in season 3  \n3. Tell me something about Yunkai \n4. I want to know about House Casterly \n5. random house \n6. random city \n7. random character \n8. Is Eddard Stark dead?");
-                        defaultQuickReplies(sender, "Hello, You can ask queries like \n1.What is sigil and words of House Arryn? \n2. What did arya do in season 3  \n3. Tell me something about Yunkai \n4. I want to know about House Casterly \n5. random house \n6. random city \n7. random character \n8. Is Eddard Stark dead?");
+                        defaultQuickReplies(sender, "Hello, I am gonna help you Breakdown episodes and characters during Season 7. \n\n Also, use my random generator to enjoy quirky random information from the World of Ice and Fire.");
                     } else {//bracket 102 open
                       var options = {
                         mode: 'text',
