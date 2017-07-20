@@ -3,7 +3,30 @@
 '''
 
 import random, re
+import requests, urllib2
+from bs4 import BeautifulSoup
 
+def scrap_wiki_doc(thing):
+    words = thing.split(' ')
+    tail = ''
+    for each in words:
+        tail = tail + each + '_'
+    tail = tail[:-1]
+    '''opener = urllib2.build_opener()
+    opener.addheaders = [('User-agent', 'Mozilla/5.0')]
+    url = 'http://gameofthrones.wikia.com/wiki/'+tail
+    response = opener.open(url)
+    page = response.read()
+    soup = BeautifulSoup(page, "lxml")'''
+    site= 'http://gameofthrones.wikia.com/wiki/'+tail
+    hdr = {'User-Agent': 'Mozilla/5.0'}
+    req = urllib2.Request(site,headers=hdr)
+    page = urllib2.urlopen(req)
+    soup = BeautifulSoup(page, "lxml")
+    soup = soup.find(id="mw-content-text")
+    text = soup.get_text()
+    return text
+    
 def most_relevant_1(title):
     doc = scrap_wiki_doc(title)
     title = title.lower()
