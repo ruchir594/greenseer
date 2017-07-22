@@ -104,18 +104,23 @@ function defaultQuickReplies (sender, text) {
         quick_replies:[
             {
                 content_type: 'text',
-                title: 'S7 E1 Theories',
-                payload: 'S7_E1_Theories'
-            },
-            {
-                content_type: 'text',
-                title: 'S7 E2 Theories',
-                payload: 'S7_E2_Theories'
+                title: 'S7 E2 Preview',
+                payload: 'S7_E2_Preview'
             },
             {
                 content_type: 'text',
                 title: 'S7 E3 Theories',
                 payload: 'S7_E3_Theories'
+            },
+            {
+                content_type: 'text',
+                title: 'Breakdown',
+                payload: 'Breakdown'
+            },
+            {
+                content_type: 'text',
+                title: 'random',
+                payload: 'random'
             }
         ]
     })
