@@ -50,24 +50,20 @@ app.post('/webhook', (req, res) => {
 
             /////////////////////////////////////////////////////////////////////////////////////////
                     console.log("Receive a message2: " + text);
-
-                    if(text.toLowerCase() == 'hi' || text.toLowerCase() == 'hey' || text.toLowerCase() == 'hello'){
-                        //sendTextMessage(sender,"Hello, You can ask queries like \n1.What is sigil and words of House Arryn? \n2. What did arya do in season 3  \n3. Tell me something about Yunkai \n4. I want to know about House Casterly \n5. random house \n6. random city \n7. random character \n8. Is Eddard Stark dead?");
-                        defaultQuickReplies(sender, "Hello, I am gonna help you Breakdown episodes and characters during Season 7. \n\n Also, use my random generator to enjoy quirky random information from the World of Ice and Fire.");
-                    } else {//bracket 102 open
-                      var options = {
-                        mode: 'text',
-                        args: [text, sender]
-                      };
-                      PythonShell.run("./parent.py" , options,function (err, results) {
-                        if (err) throw err;
-                        console.log('back in app.js')
-                        console.log(results)
-                        //var arrobj = require('./gres.json');
-                        var arrobj = JSON.parse(require('fs').readFileSync('gres.json', 'utf8'));
-                        sendMessage(sender, arrobj);
-                      });
-               }//bracket 102 close
+                        //bracket 102 open
+                          var options = {
+                            mode: 'text',
+                            args: [text, sender]
+                          };
+                          PythonShell.run("./parent.py" , options,function (err, results) {
+                            if (err) throw err;
+                            console.log('back in app.js')
+                            console.log(results)
+                            //var arrobj = require('./gres.json');
+                            var arrobj = JSON.parse(require('fs').readFileSync('gres.json', 'utf8'));
+                            sendMessage(sender, arrobj);
+                          });
+                   //bracket 102 close
         } //bracket 101 close
     });
     res.sendStatus(200);
