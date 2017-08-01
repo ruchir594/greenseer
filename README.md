@@ -28,7 +28,7 @@ Rules
 
 Check out simple CSV file to understand rules. Advance section below has link to more elaborate discussion.
 
-*Note: please be sure not to include an empty Pattern(`<code>&ast;&ast;</code>`) to Match as default response. But specify a DefaultResponse separately. Otherwise multiple patterns will never be matched.*
+*Note: please be sure not to include an empty Pattern(<code>&ast;&ast;</code>) to Match as default response. But specify a DefaultResponse separately. Otherwise multiple patterns will never be matched.*
 
 
 ## Advance
