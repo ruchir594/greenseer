@@ -19,12 +19,17 @@ Every request is passed on from bot.js to parent.py. Python does computation and
 
 ### Conversation.CSV
 Pattern matching conversation happens.
+
 Rules
 1. CSV has 2 columns. First column defines pattern. Second Column defines possible response.
 2. Pattern is specified between \* (asterisk)
 3. Multiple patterns are separated by \_ (underscore)
+4. You can set a "DefaultResponse" row in CSV which will be the default response.
 
-Check out simple CSV file to understand rules. Advance section below has link to more elaborate discussion. 
+Check out simple CSV file to understand rules. Advance section below has link to more elaborate discussion.
+
+*Note: please be sure not to include an empty Pattern(`<code>&ast;&ast;</code>`) to Match as default response. But specify a DefaultResponse separately. Otherwise multiple patterns will never be matched.*
+
 
 ## Advance
 
