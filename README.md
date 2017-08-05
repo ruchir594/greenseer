@@ -1,6 +1,6 @@
 # Welsome to Greenseer Bot. A bot for Game of Thrones which helps you Breakdown episodes.
 
-Here i will talk about all aspects of my Game Of Thrones Bot on https://www.facebook.com/gotoraven/
+my Game Of Thrones Bot on http://m.me/gotoraven , https://www.facebook.com/gotoraven/
 
 Back-end AWS EC2
 Front-end FB Messenger
