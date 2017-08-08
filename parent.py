@@ -36,6 +36,15 @@ def build(ret):
             i+=1
 
         ret = res[0] + '^' + res[1] + '^' + str(gres)
+    elif res[0] == 'gen_image_reply':
+        # for sending an image as attachment
+        data = {
+                "type":"image",
+                "payload":{
+                    "url":res[1]
+                }
+            }
+        gres['attachment'] = data
     else:
         gres['text'] = ret
     with open('gres.json', 'w') as outfile:
