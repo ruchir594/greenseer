@@ -12,7 +12,11 @@ thispath = './'
 thisbot = 'greenbot'
 
 def build(ret):
+    '''
+
+    '''
     res = ret.split('<')
+    # building general FB response
     gres = {}
 
     if ret.replace(' ','') == 'random':
@@ -20,6 +24,7 @@ def build(ret):
         ret=ret[:635].replace('"','').replace("'","")
 
     if res[0] == 'gen_quick_replies':
+        # for generating quick replies
         if res[1] != 'no_text_necessary':
             gres['text'] = res[1]
         else:
@@ -32,10 +37,12 @@ def build(ret):
                 "title": res[i],
                 "payload": res[i] + ' ql'
             }
+            # appending each quick reply
             gres['quick_replies'].append(data)
             i+=1
 
         ret = res[0] + '^' + res[1] + '^' + str(gres)
+
     elif res[0] == 'gen_image_reply':
         # for sending an image as attachment
         data = {
@@ -45,8 +52,22 @@ def build(ret):
                 }
             }
         gres['attachment'] = data
+        # quick replies if any
+        i=2
+        if i<len(res):
+            gres['quick_replies'] = []
+        while i<len(res):
+            data = {
+                "content_type": "text",
+                "title": res[i],
+                "payload": res[i] + ' ql'
+            }
+            # appending each quick reply
+            gres['quick_replies'].append(data)
+            i+=1
     else:
         gres['text'] = ret
+
     with open('gres.json', 'w') as outfile:
         json.dump(gres, outfile)
     return ret
@@ -67,13 +88,10 @@ def p(each_ex, id):
 
     # ---
     ret = chatbot.converse2(each_ex)
-    ret = build(ret)
+    if ret:
+        ret = build(ret)
 
-    ret=ret.encode('ascii', 'ignore')
-    print ret
+        ret=ret.encode('ascii', 'ignore')
+        print ret
 
-
-'''
- This file function get's callled when bot.js executes pythonshell statement
-'''
 p(str(sys.argv[1]), sys.argv[2])
