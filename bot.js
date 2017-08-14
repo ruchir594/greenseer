@@ -50,20 +50,23 @@ app.post('/webhook', (req, res) => {
 
             /////////////////////////////////////////////////////////////////////////////////////////
                     console.log("Receive a message2: " + text);
-                        //bracket 102 open
-                          var options = {
-                            mode: 'text',
-                            args: [text, sender]
-                          };
-                          PythonShell.run("./parent.py" , options,function (err, results) {
-                            if (err) throw err;
-                            console.log('back in app.js')
-                            console.log(results)
-                            //var arrobj = require('./gres.json');
-                            var arrobj = JSON.parse(require('fs').readFileSync('gres.json', 'utf8'));
-                            sendMessage(sender, arrobj);
-                          });
-                   //bracket 102 close
+                    //bracket 102 open
+                    // make variable to pass to Python
+                      var options = {
+                        mode: 'text',
+                        args: [text, sender]
+                      };
+                      // Call Python for processing
+                      PythonShell.run("./parent.py" , options,function (err, results) {
+                        if (err) throw err;
+                        //console.log('back in app.js')
+                        console.log(results)
+                        // Response from Python is stored in JSON file which is ready to be sent to Facebook Graph API
+                        var arrobj = JSON.parse(require('fs').readFileSync('gres.json', 'utf8'));
+                        // Send Text or Image without being concern about the content
+                        sendMessage(sender, arrobj);
+                      });
+               //bracket 102 close
         } //bracket 101 close
     });
     res.sendStatus(200);
