@@ -94,33 +94,6 @@ function sendTextMessage (sender, text) {
     });
 }
 
-function defaultQuickReplies (sender, text) {
-    sendMessage(sender, {
-        text: text+'\n\nOr, would you like to delve into theiroes.',
-        quick_replies:[
-            {
-                content_type: 'text',
-                title: 'S7 E2 Preview',
-                payload: 'S7_E2_Preview'
-            },
-            {
-                content_type: 'text',
-                title: 'S7 E3 Theories',
-                payload: 'S7_E3_Theories'
-            },
-            {
-                content_type: 'text',
-                title: 'Breakdown',
-                payload: 'Breakdown'
-            },
-            {
-                content_type: 'text',
-                title: 'random',
-                payload: 'random'
-            }
-        ]
-    })
-}
 
 app.post('/token', (req, res) => {
     if (req.body.verifyToken === verifyToken) {
