@@ -1,0 +1,404 @@
+ccopy_reg
+_reconstructor
+p0
+(cActionsA.nlg.nltk_chat_util
+Chat
+p1
+c__builtin__
+object
+p2
+Ntp3
+Rp4
+(dp5
+S'_reflections'
+p6
+(dp7
+S"i'll"
+p8
+S'you will'
+p9
+sS'me'
+p10
+S'you'
+p11
+sS"i've"
+p12
+S'you have'
+p13
+sS'i'
+p14
+g11
+sS'i was'
+p15
+S'you were'
+p16
+sS"you'll"
+p17
+S'I will'
+p18
+sS"i'd"
+p19
+S'you would'
+p20
+sS'you are'
+p21
+S'I am'
+p22
+sS"you've"
+p23
+S'I have'
+p24
+sg11
+g10
+sg16
+S'I was'
+p25
+sS'i am'
+p26
+g21
+sS"i'm"
+p27
+g21
+sS'yours'
+p28
+S'mine'
+p29
+sS'my'
+p30
+S'your'
+p31
+sg31
+g30
+ssS'_pairs'
+p32
+(lp33
+(cre
+_compile
+p34
+(S'(.*)e1 Arya(.*)'
+p35
+I2
+tp36
+Rp37
+(S'gen_quick_replies<Arya went beyond her list to kill more Freys than just Walder Frey. Infact she killed every single Frey and is now on her way down. She met a bunch of Lannister Soldiers - one of whom is played by Ed Sheeran.<E1 Winterfell<E1 Dragonstone<E1 Kings Landing<E1 Little Finger<E1 Hound'
+p38
+tp39
+tp40
+a(g34
+(S'(.*)e1 Winterfell(.*)'
+p41
+I2
+tp42
+Rp43
+(S'gen_quick_replies<It gets a bit complex as Sansa unknowingly undermines Jon. However Jon looks firm so far. It will be interesting to see how accepting other northern families are with Karstark and Umbers retaining their home even after betraying the House Stark. Brianne and Tormund develop some chemistry.<E1 Arya<E1 Kings Landing<E1 Little Finger<E1 Hound'
+p44
+tp45
+tp46
+a(g34
+(S'(.*)e1 Dragonstone(.*)'
+p47
+I2
+tp48
+Rp49
+(S'gen_quick_replies<Daenerys reaches her birth place. Sam discovers a mountain of Dragonglass underneath the Dragonstone.<E1 Arya<E1 Winterfell<E1 Kings Landing<E1 Little Finger<E1 Hound'
+p50
+tp51
+tp52
+a(g34
+(S'(.*)e1 Kings Landing(.*)'
+p53
+I2
+tp54
+Rp55
+(S'gen_quick_replies<Cersei tries to be strong. Jaime tries to put some sense in her but fails. Jaime however still supports her fully. Euron pays a visit with an offer of marriage which Cersei rejects. Dont expect Jaime to support Cersei forever.<Azor Ahai - Jaime<E1 Winterfell<E1 Arya<E1 little finger'
+p56
+tp57
+tp58
+a(g34
+(S'(.*)e1 Little Finger(.*)'
+p59
+I2
+tp60
+Rp61
+(S'gen_quick_replies<Petyr Baelish is happy with Sansa unknowingly undermining The King in the North. He pursues Sansa even further - instigating a thought of Sansa being unhappy - planting dangerous seeds with ideas as he always does.<E1 Arya<E1 Winterfell<E1 Dragonstone<E1 Kings Landing<E1 Hound'
+p62
+tp63
+tp64
+a(g34
+(S'(.*)e1 Hound(.*)'
+p65
+I2
+tp66
+Rp67
+(S'gen_quick_replies<Hound is undoubtedly funny. He struggles with the place where they are spending the night as it is the same home where Arya and He spent a night before on their way to Twins before Red Wedding. Sender has ripped this family before and he seems visibly uncomfortable with it in his new avatar.<E1 Arya<E1 Kings Landing<E1 Little Finger'
+p68
+tp69
+tp70
+a(g34
+(S'(.*)breakdown of e1(.*)'
+p71
+I2
+tp72
+Rp73
+(S'gen_quick_replies<no_text_necessary<E1 Arya<E1 Winterfell<E1 Dragonstone<E1 Kings Landing<E1 Little Finger<E1 Hound'
+p74
+tp75
+tp76
+a(g34
+(S'(.*)breakdown(.*)'
+p77
+I2
+tp78
+Rp79
+(S'gen_quick_replies<no_text_necessary<E1 Arya<E1 Winterfell<E1 Dragonstone<E1 Kings Landing<E1 Little Finger<E1 Hound'
+p80
+tp81
+tp82
+a(g34
+(S'(.*)arya_list(.*)'
+p83
+I2
+tp84
+Rp85
+(S'gen_quick_replied<It is highly unlikely that Arya will get to kill anyone else on her Kill list<breakdown<lightbringer'
+p86
+tp87
+tp88
+a(g34
+(S'(.*)s7 e2 preview(.*)'
+p89
+I2
+tp90
+Rp91
+(S'gen_quick_replies<Episode 2 is named Stormborn where Daenerys gets an unexpected visitor. This could be John Snow in search of alliance or it could be The Red Woman Melisandre. Tyrion plans the conquest of Westeros where he might reveal the sewage pathways of Casterly Rock - as he was incharge of sewage system of the city when he was a young boy. We also see Lord Royce of Vale proclaiming - a Targaryen cannot be trusted - in the hallways of Winterfell. This could mean that the raven Sam sent reached Jon. <Breakdown of E1'
+p92
+tp93
+tp94
+a(g34
+(S'(.*)s7 e1(.*)'
+p95
+I2
+tp96
+Rp97
+(S'Name of the episode Dragonstone. So Daenerys Targaryen will spend most of her time there. Jon snow is mounting a defense of the north. Cersei tries to even the odds in the episode description. We honestly do not know a lot as of now.'
+p98
+tp99
+tp100
+a(g34
+(S'(.*)s7 e2(.*)'
+p101
+I2
+tp102
+Rp103
+(S'gen_quick_replies<Episode 2 is named Stormborn where Daenerys gets an unexpected visitor. This could be John Snow in search of alliance or it could be The Red Woman Melisandre. Tyrion plans the conquest of Westeros where he might reveal the sewage pathways of Casterly Rock - as he was incharge of sewage system of the city when he was a young boy. We also see Lord Royce of Vale proclaiming - a Targaryen cannot be trusted - in the hallways of Winterfell. This could mean that the raven Sam sent reached Jon. <Breakdown of E1'
+p104
+tp105
+tp106
+a(g34
+(S'(.*)s7 e3(.*)'
+p107
+I2
+tp108
+Rp109
+(S'Episode 3 is named Queens Justice so it could be either Cersei or Daenerys. Also in the description - Jaime learns from his mistake. So Jaime might realign his priorities.'
+p110
+tp111
+tp112
+a(g34
+(S'(.*)e1(.*)'
+p113
+I2
+tp114
+Rp115
+(S'Name of the episode Dragonstone. So Daenerys Targaryen will spend most of her time there. Jon snow is mounting a defense of the north. Cersei tries to even the odds in the episode description. We honestly do not know a lot as of now.'
+p116
+tp117
+tp118
+a(g34
+(S'(.*)e2(.*)'
+p119
+I2
+tp120
+Rp121
+(S'gen_quick_replies<Episode 2 is named Stormborn where Daenerys gets an unexpected visitor. This could be John Snow in search of alliance or it could be The Red Woman Melisandre. Tyrion plans the conquest of Westeros where he might reveal the sewage pathways of Casterly Rock - as he was incharge of sewage system of the city when he was a young boy. We also see Lord Royce of Vale proclaiming - a Targaryen cannot be trusted - in the hallways of Winterfell. This could mean that the raven Sam sent reached Jon. <Breakdown of E1'
+p122
+tp123
+tp124
+a(g34
+(S'(.*)e3(.*)'
+p125
+I2
+tp126
+Rp127
+(S'Episode 3 is named Queens Justice so it could be either Cersei or Daenerys. Also in the description - Jaime learns from his mistake. So Jaime might realign his priorities.'
+p128
+tp129
+tp130
+a(g34
+(S'(.*)Azor Ahai - Jaime(.*)'
+p131
+I2
+tp132
+Rp133
+(S'gen_quick_replies<Jaime might be Azor Ahai - a.k.a The Prince that was Promised(PTP). Check out Lightbringer story from below. He might also kill Cersei at the end.<Jaime killing Cersei<Lightbringer<Breakdown<Random'
+p134
+tp135
+tp136
+a(g34
+(S'(.*)Jaime killing Cersei(.*)'
+p137
+I2
+tp138
+Rp139
+(S'gen_quick_replies<Prophecy for Cersei that she will have 3 children and they will all die has come true. It was also told to her by the witch that she will be killed by her younger brother which she always assumed to be Tyrion. But it might be Jaime. Check out Lightbringer story below.<Azor Ahai - Jaime<Lightbringer<Breakdown<Random'
+p140
+tp141
+tp142
+a(g34
+(S'(.*)Lightbringer(.*)'
+p143
+I2
+tp144
+Rp145
+(S'gen_quick_replies<To fight the darkness - Azor Ahai needed to forge sword. After thirty days and thirty nights - when he went to temper it in water - the sword broke. The second time after fifty days and fifty nights - he captured a lion and drove the sword into its heart - but broke again. The third time he worked for a hundred days and nights until it was finished - This time - he called for his wife - Nissa Nissa - and He drove his sword into her breast - her soul combining with the steel of the sword - creating Lightbringer - while her cry of anguish and ecstasy left a crack across the face of the moon.<Jaime killing Cersei<Azor Ahai - Jaime<Breakdown<Random'
+p146
+tp147
+tp148
+a(g34
+(S'(.*)random(.*)'
+p149
+I2
+tp150
+Rp151
+(S'random'
+p152
+tp153
+tp154
+a(g34
+(S'DefaultResponse'
+p155
+I2
+tp156
+Rp157
+(S'gen_quick_replies<Hello - I am gonna help you Breakdown episodes and characters during Season 7. Also use my random generator to enjoy quirky random information from the World of Ice and Fire.<S7 E2 Theories<S7 E3 Theories<Breakdown of E1<random'
+p158
+tp159
+tp160
+a(g34
+(S'(.*)summer_time(.*)'
+p161
+I2
+tp162
+Rp163
+(S'gen_quick_replies<Car<Ferrari<Lamborghini'
+p164
+S'gen_quick_replies<Laptop<Apple<Dell'
+p165
+S'Beautiful Clothes'
+p166
+tp167
+tp168
+a(g34
+(S'testimage'
+p169
+I2
+tp170
+Rp171
+(S'gen_image_reply<http://nerdist.com/wp-content/uploads/2017/07/map-dragonstone-615x340.jpg'
+p172
+tp173
+tp174
+a(g34
+(S'testgif'
+p175
+I2
+tp176
+Rp177
+(S'gen_image_reply<https://media.giphy.com/media/11clOWGCHzWG7C/giphy.gif'
+p178
+tp179
+tp180
+asS'_full_pairs'
+p181
+((g35
+g39
+tp182
+(g41
+g45
+tp183
+(g47
+g51
+tp184
+(g53
+g57
+tp185
+(g59
+g63
+tp186
+(g65
+g69
+tp187
+(g71
+g75
+tp188
+(g77
+g81
+tp189
+(g83
+g87
+tp190
+(g89
+g93
+tp191
+(g95
+g99
+tp192
+(g101
+g105
+tp193
+(g107
+g111
+tp194
+(g113
+g117
+tp195
+(g119
+g123
+tp196
+(g125
+g129
+tp197
+(g131
+g135
+tp198
+(g137
+g141
+tp199
+(g143
+g147
+tp200
+(g149
+g153
+tp201
+(g155
+g159
+tp202
+(g161
+g167
+tp203
+(g169
+g173
+tp204
+(g175
+g179
+tp205
+tp206
+sS'_regex'
+p207
+g34
+(S"\\b(you\\ were|you\\ are|you\\'ll|you\\'ve|i\\ was|yours|i\\'ll|i\\'ve|i\\ am|your|i\\'d|you|i\\'m|me|my|i)\\b"
+p208
+I2
+tp209
+Rp210
+sb.
